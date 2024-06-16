@@ -1,7 +1,9 @@
-export default function ListItem({ data }) {
+import "./Card.css"
+
+export default function Card({ data }) {
     return (
     <>
-    <div className="list-item">
+    <div className="hero-card">
         <img className="hero-img" src={data.url} alt={data.name}/>
         <h2>{data.name}</h2>
         <p>Альтер-эго: {data.alterego}</p>
